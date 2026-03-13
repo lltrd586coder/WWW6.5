@@ -16,6 +16,8 @@ This directory contains various Solidity smart contracts and their frontend impl
 - `Day9_Calculator.sol`
 - `Day9_ScientificCalculator.sol`
 - `Day10_ActivityTracker.sol` ⭐
+- `Day11_Ownable.sol` ⭐
+- `Day11_VaultMaster.sol` ⭐
 
 ### Frontend Applications
 Frontend implementations are organized in the `frontend/` subdirectory.
@@ -27,6 +29,17 @@ Frontend implementations are organized in the `frontend/` subdirectory.
   - 🚀 Quick start:
     ```bash
     cd frontend/Day10_ActivityTracker
+    python3 -m http.server 8000
+    # Then open: http://localhost:8000/demo.html (no wallet)
+    # Or: http://localhost:8000/index.html (with MetaMask)
+    ```
+
+- **Day11 Vault Master** - Secure ETH vault with ownership controls
+  - 📂 Location: `frontend/Day11_VaultMaster/`
+  - 📖 [View README](frontend/Day11_VaultMaster/README.md)
+  - 🚀 Quick start:
+    ```bash
+    cd frontend/Day11_VaultMaster
     python3 -m http.server 8000
     # Then open: http://localhost:8000/demo.html (no wallet)
     # Or: http://localhost:8000/index.html (with MetaMask)
