@@ -45,13 +45,13 @@ contract MyFisrtToken {
     }
 
     // the user who call this function will transfer _value to tagetUser.
-    function transfer(address _to, uint256 _value)public returns(bool){
+    function transfer(address _to, uint256 _value)public virtual returns(bool){
         _transfer(msg.sender, _to, _value);
         return true;
     }
 
     // somebody give the sender allowance to make the deal.帮别人转帐
-    function transferFrom(address _from, address _to, uint256 _value) public returns(bool){
+    function transferFrom(address _from, address _to, uint256 _value) public virtual returns(bool){
         // 检查allowance
         require(allowance[_from][msg.sender] >= _value, "Allowance too low");
         // 先扣除allowance
