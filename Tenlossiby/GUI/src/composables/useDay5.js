@@ -69,7 +69,7 @@ export function useDay5() {
   const withdrawTreasure = (userAddress, amount) => {
     if (!userAddress || !amount || amount <= 0) return false
 
-    const withdrawn = false
+    let withdrawn = false
     if (userAddress === contract.value.owner) {
       if (amount <= contract.value.treasureAmount) {
         contract.value.treasureAmount -= amount
